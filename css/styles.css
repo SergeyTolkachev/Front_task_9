@@ -101,22 +101,6 @@ a {
     body {
         width: 1024px;
     }
-
-    .info__block div {
-        width: calc(33.332% - 10px);
-        margin: 5px 5px 0px 5px;
-    }
-
-    .content__text {
-        float: left;
-        width: 70%;
-    }
-
-    aside {
-        float: left;
-        width: calc(100%-10px);
-        margin-left: 10px;
-    }
-
+    
 }
 
