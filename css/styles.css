@@ -1,7 +1,6 @@
 body {
     font-family: 'Robot Mono', monospace;
     margin: 0;
-    width: 320px;
     background-color:rgb(204, 192, 192);
     font-size: 16px;
 }
@@ -9,6 +8,12 @@ body {
 #wrapper {
     position: relative;
     overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .info__block{
@@ -41,7 +46,7 @@ div h3{
 
 .content__text, aside {
     float: left;
-    width: calc(100%);
+    width: 100%;
 }
 
 .content {
@@ -71,10 +76,6 @@ a {
 
 @media (min-width: 768px){
 
-    body {
-        width: 768px;
-    }
-
     .info__block div {
         width: calc(33.332% - 10px);
         margin: 5px 5px 0px 5px;
@@ -86,7 +87,7 @@ a {
 
     .content__text {
         float: left;
-        width: calc(70%);
+        width: 70%;
     }
 
     aside {
@@ -96,11 +97,4 @@ a {
     }
 }
 
-@media (min-width: 1024px){
-
-    body {
-        width: 1024px;
-    }
-    
-}
 
