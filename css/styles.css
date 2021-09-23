@@ -10,32 +10,26 @@ body {
     overflow-x: hidden;
 }
 
-.info__block{
-    margin: 5px;
-}
-
-.info__block::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.info__block div {
+.info__block{
+    margin: 5px;
+}
+
+.info__col {
     float: left;
     width: calc(100% - 10px);
     background-color: white;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     padding: 10px;
 }
 
 div h3{
     margin-top: 10px;
-}
-
-.content::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .content__text, aside {
@@ -70,13 +64,13 @@ a {
 
 @media (min-width: 768px){
 
-    .info__block div {
+    .info__col {
         width: calc(33.332% - 10px);
-        margin: 5px 5px 0px 5px;
+        margin: 5px;
     }
 
     .content {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .content__text {
@@ -89,6 +83,7 @@ a {
         width: calc(30% - 10px);
         margin-left: 10px;
     }
+
 }
 
 
